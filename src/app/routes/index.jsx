@@ -13,7 +13,7 @@ const Router = () => {
     <BrowserRouter>
       <Routes>
         {urlList.map((item) => (
-          <Route path={item.url} element={item.page} />
+          <Route key={item.url} path={item.url} element={item.page} />
         ))}
         {/* <Route path="/" element={<Home />} />
         <Route path="/coins" element={<Coins />} />

@@ -8,7 +8,7 @@ function Home() {
       <nav>
         {urlList.map((item) =>
           item.name !== "Home" && item.name !== "MovieDetail" ? (
-            <div>
+            <div key={item.url}>
               ⦁ <Link to={item.url}>{item.name}</Link> <br />
             </div>
           ) : null
