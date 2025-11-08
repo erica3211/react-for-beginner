@@ -4,7 +4,7 @@ import TodoList from "../../pages/ToDoList";
 import UseEffect from "../../pages/UseEffect";
 import MovieDetail from "../../pages/MovieDetail";
 import MovieList from "../../pages/MovieList";
-import Potato from "../../pages/Potato";
+import FoodList from "../../pages/FoodList";
 
 function UrlList() {
   return [
@@ -14,7 +14,7 @@ function UrlList() {
     { url: "/coins", page: <Coins />, name: "Coins" },
     { url: "/movieList", page: <MovieList />, name: "MovieList" },
     { url: "/detail/:id", page: <MovieDetail />, name: "MovieDetail" },
-    { url: "/potato", page: <Potato />, name: "Potato" },
+    { url: "/foodList", page: <FoodList />, name: "FoodList" },
   ];
 }
 export default UrlList;
