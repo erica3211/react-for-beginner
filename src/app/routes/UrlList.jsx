@@ -2,7 +2,6 @@ import Home from "../../pages/Home";
 import Coins from "../../pages/Coins";
 import TodoList from "../../pages/ToDoList";
 import UseEffect from "../../pages/UseEffect";
-import Movie from "../../pages/MovieList";
 import MovieDetail from "../../pages/MovieDetail";
 import MovieList from "../../pages/MovieList";
 import Potato from "../../pages/Potato";
@@ -15,8 +14,7 @@ function UrlList() {
     { url: "/coins", page: <Coins />, name: "Coins" },
     { url: "/movieList", page: <MovieList />, name: "MovieList" },
     { url: "/detail/:id", page: <MovieDetail />, name: "MovieDetail" },
-    { url: "/potato/:id", page: <Potato />, name: "Potato" },
-
+    { url: "/potato", page: <Potato />, name: "Potato" },
   ];
 }
 export default UrlList;
