@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import GoBackHome from "../components/GoBackHome";
 
 class State extends React.Component{
@@ -6,13 +6,11 @@ class State extends React.Component{
         count : 0
     };
     add = () => {
-        console.log("add", this.state.count);
-        this.state.count++;
+        this.setState(current =>({count: current.count + 1}));
 
     };
     minus = () => {
-        console.log("minus" , this.state.count);
-        this.state.count--;
+        this.setState(current =>({count: current.count - 1}));
     };
     render(){
         return (
